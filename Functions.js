@@ -53,6 +53,3 @@ console.log(something);
 // We get the above bc we made the value of 'something' equal to a function instead of the value returned
 // by the function. Needs to be changed as following in order to get 4:
 //      const something = returnFour();
-
-// EXPORTING A FUNCTION
-//
