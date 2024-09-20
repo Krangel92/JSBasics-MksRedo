@@ -41,7 +41,7 @@ sayHello2("Sarah");
 console.log(sayHello2("Sarah"));
 
 // 4. What's another way to write the sayHello function w/out using + to concatenate:
-// NOTE: Using template literals allow for string interpolation.
+// NOTE: Using template literals allow for
 const sayHello3 = (nombre) => {
 	return `Hello ${nombre}`;
 };
