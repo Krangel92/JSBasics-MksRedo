@@ -20,3 +20,22 @@ module.exports = sayHello;
 console.log(sayHello); // this returns this: [Function: sayHello]
 //                    undefined
 sayHello(); // this is the right way of calling a function to return its result, i.e. 'Hello'
+
+// 3. Modify the previous function sayHello so it accepts one argument, and calling sayHello('Sarah')
+// displays a personalised message:
+const sayHello2 = (name) => {
+	return "Hello" + name;
+};
+
+sayHello2("Sarah");
+
+// RESULT with node REPL:
+//   > const sayHello2 = (name) => {
+//   ... return "Hello " + name + "!";
+//   ... };
+//   undefined
+//   > sayHello2("Sarah");
+//   'Hello Sarah!'
+
+// to see the output by running the file I need to have the below in the file:
+console.log(sayHello2("Sarah"));
