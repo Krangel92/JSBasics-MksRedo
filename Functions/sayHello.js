@@ -24,7 +24,7 @@ sayHello(); // this is the right way of calling a function to return its result,
 // 3. Modify the previous function sayHello so it accepts one argument, and calling sayHello('Sarah')
 // displays a personalised message:
 const sayHello2 = (name) => {
-	return "Hello" + name;
+	return "Hello " + name;
 };
 
 sayHello2("Sarah");
@@ -39,3 +39,13 @@ sayHello2("Sarah");
 
 // to see the output by running the file I need to have the below in the file:
 console.log(sayHello2("Sarah"));
+
+// 4. What's another way to write the sayHello function w/out using + to concatenate:
+// NOTE: Using template literals allow for string interpolation.
+const sayHello3 = (nombre) => {
+	return `Hello ${nombre}`;
+};
+console.log(sayHello3("Karla"));
+
+// RESULT when running the file:
+// 'Hello Karla'
