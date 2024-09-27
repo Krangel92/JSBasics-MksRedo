@@ -24,6 +24,6 @@ module.exports = hello;
 
 // To require from another file or the node REPL:
 // *the below only works in the node REPL, how do I use it in another file?
-const hello = require("./hello");
+// const hello = require("./hello");
 
-hello();
+// hello();
