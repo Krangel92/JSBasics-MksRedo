@@ -12,7 +12,7 @@ add(2, 3); // to run code in node REPL & it'd look like this:
 //     > add(2, 3);
 //     5
 
-console.log(add(2, 3)); //to see output by running file, node add.js
+console.log(add(3, 3)); //to see output by running file, node add.js
 
 // 2. From node, require and call the functions add and multiply to calculate and print the following: 2 * (4 + 4).
 //    You should get the correct result (16). The add.js & multiply.js files need to be used.
@@ -20,7 +20,7 @@ module.exports = add;
 
 // To require from another file or the node REPL ((ensure the below is // before running it
 // in node or it won't work):
-//      const add = require("./add");
+//      const add = requirade("./add");
 
 //      add();
 
