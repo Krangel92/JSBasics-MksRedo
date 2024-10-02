@@ -1,6 +1,6 @@
 // Loops in JS are the same as in other languagues.
 
-// Example:
+// Example - for loop:
 // To get all numbers from 0 to 10:
 
 // 1. The below works by just using console.log bc i'm not returning a value, I'm simply printing the
@@ -19,3 +19,13 @@ const loops = () => {
 	}
 	return addNumbers; // returns array after finishing the loop. Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 };
+
+// Example - while loop:
+// 2. Now a while loop also getting all numbers from 0 to 10:
+let x = 0;
+
+while (x <= 10) {
+	console.log(x);
+
+	x += 1;
+}
