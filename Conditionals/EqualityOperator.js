@@ -45,3 +45,11 @@ const isValidLength = (phoneNumber) => {
 // Also, the strict equality operator is better to avoid bugs due to different data types.
 
 // RESULT after function is fixed:
+// const isValidLength = (phoneNumber) => {
+// 	const validLength = 11;
+// 	if (phoneNumber.length === validLength) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// };
