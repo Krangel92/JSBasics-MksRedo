@@ -20,20 +20,20 @@ const fizzBuzz = (num) => {
 };
 
 // to run code in node REPL:
-// fizzBuzz(3);
-// fizzBuzz(5);
-// fizzBuzz(8);
-// fizzBuzz(15);
-// fizzBuzz(18);
-// fizzBuzz(20);
+fizzBuzz(3);
+fizzBuzz(5);
+fizzBuzz(8);
+fizzBuzz(15);
+fizzBuzz(18);
+fizzBuzz(20);
 
-// // //to see output by running file, node fizzBuzz.js
-// console.log(fizzBuzz(3));
-// console.log(fizzBuzz(5));
-// console.log(fizzBuzz(8));
-// console.log(fizzBuzz(15));
-// console.log(fizzBuzz(18));
-// console.log(fizzBuzz(20));
+// //to see output by running file, node fizzBuzz.js
+console.log(fizzBuzz(3));
+console.log(fizzBuzz(5));
+console.log(fizzBuzz(8));
+console.log(fizzBuzz(15));
+console.log(fizzBuzz(18));
+console.log(fizzBuzz(20));
 
 // export it, to be able to use it /require it from outside this file..
 module.exports = fizzBuzz;
