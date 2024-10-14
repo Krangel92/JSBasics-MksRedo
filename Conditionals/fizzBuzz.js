@@ -34,3 +34,6 @@ console.log(fizzBuzz(8));
 console.log(fizzBuzz(15));
 console.log(fizzBuzz(18));
 console.log(fizzBuzz(20));
+
+// export it, to be able to use it /require it from outside this file..
+module.exports = fizzBuzz;
