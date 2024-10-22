@@ -12,8 +12,9 @@ numbers.forEach((number) => {
 	numbersSum += number;
 });
 console.log(numbersSum);
+
 // Repeating ex using forEach() for practice:
-const numeros = [1, 2, 3];
+const numeros = [1, 2, 2];
 
 let sum = 0;
 
@@ -43,3 +44,5 @@ console.log(total);
 //     - For ex, on the first iteration (num = 0), the value at nums[0] is 1, so total becomes 0 + 1 = 1.
 //     - On the second iteration (num = 1), nums[1] is 2, so total becomes 1 + 2 = 3.
 //     - This process continues until the loop has added up all the numbers in the array.
+
+// Useful link: https://www.freecodecamp.org/news/how-to-add-numbers-in-javascript-arrays/
