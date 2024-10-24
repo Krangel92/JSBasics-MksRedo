@@ -12,7 +12,7 @@ const addToBatch = (myArray, num) => {
 	return myArray.concat(num);
 };
 
-console.log(addToBatch([1], 3)); // RESULT: [1, 3]
+// console.log(addToBatch([1], 3)); // RESULT: [1, 3]
 
 // 2.
 const addToBatch2 = (myArray, num) => {
@@ -23,9 +23,24 @@ const addToBatch2 = (myArray, num) => {
 	}
 };
 
-console.log(addToBatch2([1, 2, 3], 4)); // RESULT:  [ 1, 2, 3, 4 ]
-console.log(addToBatch2([], 8)); // RESULT:  [ 8 ]
-console.log(addToBatch2([1, 2, 3, 4, 5, 6], 7)); // RESULT:  [ 1, 2, 3, 4, 5, 6 ]
-console.log(addToBatch2([1, 2, 3, 4, 5, 6, 7, 8, 9], 10)); // RESULT:  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// console.log(addToBatch2([1, 2, 3], 4)); // RESULT:  [ 1, 2, 3, 4 ]
+// console.log(addToBatch2([], 8)); // RESULT:  [ 8 ]
+// console.log(addToBatch2([1, 2, 3, 4, 5, 6], 7)); // RESULT:  [ 1, 2, 3, 4, 5, 6 ]
+// console.log(addToBatch2([1, 2, 3, 4, 5, 6, 7, 8, 9], 10)); // RESULT:  [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 module.exports = addToBatch2;
+
+// RESULT in node (by requiring and calling the addToBatch2 function):
+
+//      > const addToBatch2 = require('./addToBatch.js');
+//      undefined
+//      > addToBatch2([1], 3);
+//      [ 1, 3 ]
+//      > addToBatch2([1, 2, 3], 4);
+//      [ 1, 2, 3, 4 ]
+//      > addToBatch2([], 8);
+//      [ 8 ]
+//      > addToBatch2([1, 2, 3, 4, 5, 6], 7);
+//      [ 1, 2, 3, 4, 5, 6 ]
+//      > addToBatch2([1, 2, 3, 4, 5, 6, 7, 8, 9], 10);
+//      [1, 2, 3, 4, 5, 6, 7, 8, 9]
