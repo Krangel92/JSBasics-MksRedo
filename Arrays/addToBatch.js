@@ -27,3 +27,5 @@ console.log(addToBatch2([1, 2, 3], 4)); // RESULT:  [ 1, 2, 3, 4 ]
 console.log(addToBatch2([], 8)); // RESULT:  [ 8 ]
 console.log(addToBatch2([1, 2, 3, 4, 5, 6], 7)); // RESULT:  [ 1, 2, 3, 4, 5, 6 ]
 console.log(addToBatch2([1, 2, 3, 4, 5, 6, 7, 8, 9], 10)); // RESULT:  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+module.exports = addToBatch2;
