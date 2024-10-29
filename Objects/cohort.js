@@ -23,4 +23,4 @@ console.log(cohortFunction(cohort));
 
 // NOTE:
 // The cohortFunction takes an argument object and accesses its properties.
-// The cohort object is created outside the function and passed as an argument when calling objectFunction.
+// The cohort object is created outside the function and passed as an argument when calling cohortFunction.
