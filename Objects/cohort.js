@@ -21,6 +21,9 @@ const cohortFunction = (object) => {
 // Pass the cohort object to the function:
 console.log(cohortFunction(cohort));
 
+// RESULT:
+//      1234 - May2024 - 4 students in this cohort
+
 // NOTE:
 // The cohortFunction takes an argument object and accesses its properties.
 // The cohort object is created outside the function and passed as an argument when calling cohortFunction.
