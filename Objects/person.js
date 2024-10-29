@@ -16,6 +16,8 @@ const person = {
 
 // 1.
 console.log(person.address.city);
+console.log(person.address.postcode);
 
 // 2.
 console.log(person.hobbies[1]);
+console.log(person.hobbies[0]);
