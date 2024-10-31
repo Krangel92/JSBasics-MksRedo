@@ -20,7 +20,7 @@ console.log(myObj);
 //          type: "Dot syntax for a key named type"
 //      };
 
-// Bracket Notation Ex:
+// Bracket Notation Ex (key with sapaces):
 myObj["date created"] = "This key has a space";
 
 console.log(myObj);
@@ -29,4 +29,45 @@ console.log(myObj);
 // or starts w/ a number we MUST use ""
 //      const myObj = {
 //          "date created": "This key has a space"
+//      };
+
+// Key from a Variable:
+myObj[str] = "This key is in variable str";
+
+console.log(myObj);
+// After adding the property, the myObj object would like like this:
+// Note:  str is a variable holding the string "myString", so this creates a property with the name "myString" in myObj.
+//    const myObj = {
+//          myString: "This key is in variable str"
+//    };
+
+// Random Number Key:
+myObj[rand] = "A random number is the key here";
+
+console.log(myObj);
+// After adding the property, the myObj object would like like this:
+// Note: rand holds a random number (like 0.6398914448618778), so this line uses that number as a key.
+//      const myObj = {
+//          "0.6188896385207898": "A random number is the key here"
+//      }
+
+// Object as a Key:
+myObj[anotherObj] = "This key is object anotherObj";
+
+console.log(myObj);
+// After adding the property, the myObj object would like like this:
+// Note: anotherObj is an object, not a string or number. JavaScript automatically calls anotherObj.toString(),
+//       converting the object to "[object Object]", and uses that as the key name.
+//      const myObj = {
+//          "[object Object]": "This key is object anotherObj"
+//      };
+
+// Empty String as a Key:
+myObj[""] = "This key is an empty string";
+
+console.log(myObj);
+// After adding the property, the myObj object would like like this:
+// Note: the key is an empty string ""
+//      const myObj = {
+//          "": "This key is an empty string"
 //      };
