@@ -8,6 +8,7 @@ const myObj = {};
 const str = "myString";
 const rand = Math.random();
 const anotherObj = {};
+const anotherObj2 = {};
 
 // Creating Properties with Different Types of Keys:
 
@@ -43,6 +44,8 @@ console.log(myObj);
 
 // Random Number Key:
 myObj[rand] = "A random number is the key here";
+myObj["0.6188896385207898"] = "A number is the key here";
+myObj[123] = "NUM";
 
 console.log(myObj);
 // After adding the property, the myObj object would like like this:
@@ -53,6 +56,7 @@ console.log(myObj);
 
 // Object as a Key:
 myObj[anotherObj] = "This key is object anotherObj";
+myObj[anotherObj2] = "This key is object anotherObj 2"; // Note: anotherObj2 overrides anotherObj.
 
 console.log(myObj);
 // After adding the property, the myObj object would like like this:
@@ -71,3 +75,28 @@ console.log(myObj);
 //      const myObj = {
 //          "": "This key is an empty string"
 //      };
+
+// INSPECTING THE OBJECT:
+//Now that I've added all the above properties, if I log myObj I'll see the object with all key-value pairs:
+console.log(myObj);
+// RESULT:
+// {
+//     '123': 'NUM',
+//     type: 'Dot syntax for a key named type',
+//     'date created': 'This key has a space',
+//     myString: 'This key is in variable str',
+//     '0.2852746010041334': 'A random number is the key here',  // using rand will always give me a random #, i.e., this # will always be different.
+//     '0.6188896385207898': 'A number is the key here',
+//     '[object Object]': 'This key is object anotherObj 2',
+//     '': 'This key is an empty string'
+//   }
+
+//ACCESSING PROPERTIES:
+console.log(myObj.type); // RESULT: 'Dot syntax for a key named type'
+console.log(myObj["date created"]); // RESULT: 'This key has a space'
+console.log(myObj.myString); // RESULT: 'This key is in variable str'
+console.log(myObj["0.6188896385207898"]); // RESULT: 'A number is the key here'
+console.log(myObj[123]); // RESULT: 'NUM'
+console.log(myObj["[object Object]"]); // RESULT: 'This key is object anotherObj 2'
+console.log(myObj["[object Object]"]); // RESULT: 'This key is object anotherObj 2'
+console.log(myObj[""]); // RESULT: 'This key is an empty string'
