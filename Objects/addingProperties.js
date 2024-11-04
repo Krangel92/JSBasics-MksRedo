@@ -100,3 +100,8 @@ console.log(myObj[123]); // RESULT: 'NUM'
 console.log(myObj["[object Object]"]); // RESULT: 'This key is object anotherObj 2'
 console.log(myObj["[object Object]"]); // RESULT: 'This key is object anotherObj 2'
 console.log(myObj[""]); // RESULT: 'This key is an empty string'
+
+// NOTE: for the ex above, the variable str held 'myString', so 'myString is the property name. If we were to access myObj.str this will return 'undefined:
+console.log(myObj.str); //RESULT: undefined
+console.log(myObj[str]); // RESULT: 'This key is in variable str'
+console.log(myObj.myString); // RESULT: 'This key is in variable str'
