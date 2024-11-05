@@ -28,7 +28,10 @@ console.log(showProps(myCar)); // RESULT: [ 'Ford', 'Mustang', 1969 ]   - These 
 
 // Using Object.keys():
 const keys = Object.keys(myCar); // Object.keys lists the object's properties/keys
+const keys2 = Object.values(myCar);
+
 console.log(keys); // RESULT: [ 'make', 'model', 'year' ]
+console.log("line 34 " + keys2);
 // NOTE: Object.keys returns an [] of the objects properties/ keys. If other properties are added to the object, Object.keys does NOT include them in the returned array!
 
 // Using Object.getOwnPropertyNames():
