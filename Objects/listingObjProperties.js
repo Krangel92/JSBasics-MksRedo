@@ -1,6 +1,6 @@
 // Listing Object Properties (or keys) of an Object
 
-// There are three main methods to list or traverse the properties of an object:
+// There are three main methods to list the properties of an object:
 // 		for...in Loop
 // 		Object.keys()
 // 		Object.getOwnPropertyNames()
@@ -23,3 +23,11 @@ const showProps = (obj) => {
 };
 
 console.log(showProps(myCar)); // RESULT: [ 'Ford', 'Mustang', 1969 ]   - These are the values of all the keys/properties!
+
+//NOTE: the for...in loop iterates over all properties of an object. If other properties are added to the object, it DOES include them in the iteration & result!
+
+// Using Object.keys():
+const keys = Object.keys(myCar); // Object.keys lists the object's properties/keys
+console.log(keys); // RESULT: [ 'make', 'model', 'year' ]
+
+// NOTE: Object.keys returns an [] of the objects properties/ keys. If other properties are added to the object, Object.keys does NOT include them in the returned array!
