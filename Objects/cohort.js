@@ -27,3 +27,16 @@ console.log(cohortFunction(cohort));
 // NOTE:
 // The cohortFunction takes an argument object and accesses its properties.
 // The cohort object is created outside the function and passed as an argument when calling cohortFunction.
+
+// same ex for repetition (but here I put the function inside the object):
+const cohort2 = {
+	name: "Oct2024",
+	id: 1235,
+	students: ["Karla", "Tara", "Alex"],
+
+	studentCohort: (obj) => {
+		return `${cohort2.id} - ${cohort2.name} - ${cohort2.students.length} students on the cohort`;
+	},
+};
+
+console.log(cohort2.studentCohort()); // RESULT: 1235 - Oct2024 - 3 students on the cohort
