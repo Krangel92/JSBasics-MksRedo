@@ -15,9 +15,27 @@ const person = {
 };
 
 // 1.
-console.log(person.address.city);
-console.log(person.address.postcode);
+console.log(person.address.city); // London
+console.log(person.address.postcode); // E1 123
 
 // 2.
-console.log(person.hobbies[1]);
-console.log(person.hobbies[0]);
+console.log(person.hobbies[1]); // exercising
+console.log(person.hobbies[0]); // flamenco
+
+// Same ex for repetition purposes:
+const person2 = {
+	name: "Emanuele",
+	age: 36,
+	address: {
+		city: "London",
+		postcode: "E 123",
+	},
+	hobbies: ["ping pong", "coding", "exercise"],
+};
+
+console.log(person2.address.city); // London
+console.log(person2.address["postcode"]); // E 123
+
+console.log(person2.hobbies[1]); // coding
+console.log(person2["hobbies"]); // [ 'ping pong', 'coding', 'exercise' ]
+console.log(person2["hobbies"][0]); // ping pong
