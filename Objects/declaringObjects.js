@@ -17,7 +17,7 @@ const bankAccount = {
 	},
 };
 
-console.log(bankAccount.getBalance());
+console.log(bankAccount.getBalance()); // 100
 // bankAccount.getBalance();
 
 // NOTE:
