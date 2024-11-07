@@ -38,3 +38,8 @@ const generateMessages2 = (namesArr) => {
 
 console.log("LINE 40:");
 console.log(generateMessages(names));
+
+// NOTES:
+// map() creates a new array from calling a function for every array element.
+// map() does not execute the function for empty elements.
+// map() does not change the original array.
