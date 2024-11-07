@@ -28,7 +28,10 @@ const filterLongNumbers = (phoneNumbersArr) => {
 }; // 											   the condition of the function. Once it is done checking all the elem in the array, it then returns a new array ONLY with the elem that passed.
 
 console.log(filterLongNumbers(numbers)); // RESULT: [ '1763687364', '4763687363', '7867867862' ]
+console.log(filterLongNumbers(["4763687363", "7867867862"])); // RESULT: [ '4763687363', '7867867862' ]  - there was nothing to filter out.
+console.log(filterLongNumbers([])); // RESULT: []
 
 // NOTE:
 // The filter() method creates a new array filled with elements that pass a test provided by a function.
+// The filter() method does not execute the function for empty elements.
 // the filter() method does not change the original array.
