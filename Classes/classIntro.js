@@ -29,4 +29,9 @@ module.exports = Rectangle;
 //    > rect.getArea();
 //      40
 
-// EXPORTING CLASSES
+// RUNNING THE FILE (not using the node REPL):
+
+// create a new instance:
+const rect2 = new Rectangle(5, 10);
+// call the getArea() method on the new instance:
+console.log(rect2.getArea()); // 50
