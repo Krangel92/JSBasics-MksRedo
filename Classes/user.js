@@ -21,7 +21,7 @@ class User {
 	}
 
 	getIntroduction() {
-		return `Hi, my name is ${this.getName()}`;
+		return `Hi, my name is ${this.getName()}`; // OR:  `Hi, my name is ${this.name}`
 	}
 }
 
