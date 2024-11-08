@@ -26,3 +26,7 @@ console.log(doubleNumbers); // [ 2, 4, 6, 8, 10 ]
 
 // Use filter() when you want to keep only certain items.
 // Use map() when you want to change each item in some way.
+
+// Useful links:
+// https://www.javascripttutorial.net/javascript-array-filter/
+// https://www.digitalocean.com/community/tutorials/4-uses-of-javascripts-arraymap-you-should-know
