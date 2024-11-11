@@ -35,3 +35,6 @@ module.exports = Rectangle;
 const rect2 = new Rectangle(5, 10);
 // call the getArea() method on the new instance:
 console.log(rect2.getArea()); // 50
+
+const rect3 = new Rectangle(6, 10);
+console.log(rect3.getArea()); // 60
