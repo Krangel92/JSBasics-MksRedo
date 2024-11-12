@@ -13,8 +13,10 @@
 // Require the file into the node REPL to verify the class is working.
 
 class User {
-	constructor(name) {
+	constructor(name, age) {
 		this.name = name;
+		this.age = age;
+		this.nationality = "mexican";
 	}
 	getName() {
 		return this.name;
@@ -23,13 +25,17 @@ class User {
 	getIntroduction() {
 		return `Hi, my name is ${this.getName()}`; // OR:  `Hi, my name is ${this.name}`
 	}
+
+	getNationality() {
+		return this.nationality;
+	}
 }
 
 // RUNNING THE FILE (not using the node REPL):
-const user1 = new User("Karla");
+// const user1 = new User("Karla");
 
-console.log(user1.getName()); // Karla
-console.log(user1.getIntroduction()); // Hi, my name is Karla
+// console.log(user1.getName()); // Karla
+// console.log(user1.getIntroduction()); // Hi, my name is Karla
 
 // Export the class:
 module.exports = User;
