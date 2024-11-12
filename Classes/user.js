@@ -16,7 +16,7 @@ class User {
 	constructor(name, age) {
 		this.name = name;
 		this.age = age;
-		this.nationality = "mexican";
+		this.nationality = "mexican"; // by not passing 'nationality' as argmt, it means that all instances of a class/objects I create will have nationality: 'mexican' as key-value
 	}
 	getName() {
 		return this.name;
