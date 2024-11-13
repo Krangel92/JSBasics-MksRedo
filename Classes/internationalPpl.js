@@ -3,7 +3,8 @@ class InternationalPeople {
 		this.name = name;
 		this.age = age;
 		this.country = country;
-	}
+		this.sex = "Female"; // by not passing 'sex' as argmt, it means that all instances of a class/objects I create
+	} //                        will have sex: 'Female' as key-value.
 
 	getCountry() {
 		return this.country;
@@ -25,7 +26,7 @@ module.exports = InternationalPeople;
 //      > const intPerson1 = new intPpl("Karla", 32, "UK");     // TO CREATE A NEW INSTACE OF THE CLASS, SO A NEW OBJECT!
 //       undefined
 //      > intPerson1                                             // TO SEE THE NEW OBJECT CREATED
-//       InternationalPeople { name: 'Karla', age: 32, country: 'UK' }
+//       InternationalPeople { name: 'Karla', age: 32, country: 'UK', sex: 'Female' }
 //      > intPerson1.getCountry()                               // TO INVOKE THE getCountry() ON THE NEW OBJECT CREATED
 //       'UK'
 //      > intPerson1.getIntro()                                 // TO INVOKE THE getIntro() ON THE NEW OBJECT CREATED
@@ -36,3 +37,5 @@ module.exports = InternationalPeople;
 //       32
 //      > intPerson1.country                                    // TO ACESS A KEY'S VALUE OF THE NEW OBJECT CREATED
 //       'UK'
+//      > intPerson1.sex                                        // TO ACESS A KEY'S VALUE OF THE NEW OBJECT CREATED
+//       'Female'
