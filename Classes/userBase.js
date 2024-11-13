@@ -25,11 +25,19 @@
 // Require the two classes into the node REPL to verify it's working.
 
 class UserBase {
-	constructor(users) {
-		this.users = users;
+	constructor(usersArr) {
+		this.users = usersArr;
 	}
 	count() {
 		return this.users.length;
+	}
+
+	getNames() {
+		return this.users.map((user) => user.getName());
+	}
+
+	getIntroductions() {
+		return this.users.map((user) => user.getIntroduction());
 	}
 }
 
