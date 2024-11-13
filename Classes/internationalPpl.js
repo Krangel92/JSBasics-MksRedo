@@ -4,7 +4,7 @@ class InternationalPeople {
 		this.age = age;
 		this.country = country;
 		this.sex = "Female"; // by not passing 'sex' as argmt, it means that all instances of a class/objects I create
-	} //                        will have sex: 'Female' as key-value.
+	} //                        will have sex: 'Female' as key-value. THIS INSTACE VARIABLE HAS A FIXED VALUE ASSIGNED (i.e., hard-coded value).
 
 	getCountry() {
 		return this.country;
