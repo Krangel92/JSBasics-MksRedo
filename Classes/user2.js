@@ -1,4 +1,5 @@
-class User {
+// TO USE THIS CLASS IN THE UserBase CLASS WE NEED TO 'export' THE User CLASS:
+export class User {
 	constructor(name) {
 		this.name = name;
 	}
@@ -19,7 +20,8 @@ class User {
 // console.log(user1.getName());
 // console.log(user1.getIntroduction());
 
-module.exports = User;
+//EXPORTING THE CLASS:
+// module.exports = User;
 
 // In node REPL:
 
