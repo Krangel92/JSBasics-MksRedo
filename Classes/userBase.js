@@ -75,5 +75,11 @@ module.exports = UserBase;
 // 		 [ 'Uma', 'Josh', 'Ollie' ]
 // 		> userBase2.getIntroductions()										// TO INVOKE THE getIntroductions() ON THE NEW OBJECT CREATED
 // 		 [ 'Hi, my name is Uma', 'Hi, my name is Josh', 'Hi, my name is Ollie' ]
-// 		> userBase2.users[name[1]]										   // HOW DO I ACCESS EACH USER NAME IN THE OBJECT  ????
-// 		 Uncaught ReferenceError: name is not defined
+// 		> userBase2.users[0];										       // TO ACCESS A USER NAME (indexed 0) IN THE OBJECT
+// 		 User { name: 'Karla' }
+// 		> userBase2.users[1]											   // TO ACCESS A USER NAME (indexed 1) IN THE OBJECT
+// 		 User { name: 'Emanuele' }
+// 		> userBase2.users[2]											   // TO ACCESS A USER NAME (indexed 2) IN THE OBJECT
+// 		 User { name: 'Luis' }
+// 		> userBase2.getIntroductions()[0]								  // TO ACCESS A USER'S INTRODUCTION (indexed 0) IN THE OBJECT'S ARRAY
+// 		 'Hi, my name is Karla'
