@@ -37,10 +37,12 @@ class Candy {
 	}
 }
 
-const candy1 = new Candy("Twix", 3.5);
+// const candy1 = new Candy("Twix", 3.5);
 
-console.log(candy1); // Candy { candyName: 'Twix', price: 3.5 }
-console.log(candy1.getName()); // Twix
-console.log(candy1.getPrice()); // 3.50
-console.log(candy1.candyName); // Twix
-console.log(candy1.price); // 3.50
+// console.log(candy1); // Candy { candyName: 'Twix', price: 3.5 }
+// // console.log(candy1.getName()); // Twix
+// console.log(candy1.getPrice()); // 3.50
+// console.log(candy1.candyName); // Twix
+// console.log(candy1.price); // 3.50
+
+module.exports = Candy;
