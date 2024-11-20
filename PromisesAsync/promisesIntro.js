@@ -11,4 +11,9 @@
 // Note: all synchronous tasks will be executed while we wait for the asynchronous task to execute of the side. Only
 //       once all sync tasks have been completed, the asyn operations finish executing.
 
-uzuiaqiu;
+// PROMISES
+// - Promises are used to handle the asynchronicity problem & control the execution flow.
+// - Promises are objects, like containers of future data. There are 3 stages:
+//    1. Fulfilled: synchronous operation completed successfully (data requested from server came back w/ no issues).
+//    2. Rejected: asynchronous operation failed (you sent invalid req to server & got an error response).
+//    3. Pending: Promise has yet to to be either rejected or fulfilled.
