@@ -8,4 +8,18 @@
 
 // (resolve, reject)              //  -> these are the 2 argumts of the callback function.
 
-const promise = new Promise((reslve, reject) => {});
+const promise = new Promise((resolve, reject) => {});
+
+// resolve and reject each return a new promise, starting a promises chain.
+// Promises chains let you write code that will execute only once a particular asynchronous operation has ran, successfully or unsuccessfully (i.e., fulfilled or rejected).
+
+// Promises are CLASSES, so they come with their asscociated methods, the most inporatnt ones:
+//  .then() and .catch()
+// These methods let us build promises chains and handle errors, ex:
+
+const promise1 = new Promise((resolve, reject) => {
+	resolve("This Promise will resolve with this success string.");
+}).then((resolvedString) => {
+	console.log(resolvedString);
+});
+// in the Terminal: This Promise will resolve with this success string.
