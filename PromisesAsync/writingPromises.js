@@ -23,3 +23,10 @@ const promise1 = new Promise((resolve, reject) => {
 	console.log(resolvedString);
 });
 // in the Terminal: This Promise will resolve with this success string.
+
+const promise2 = new Promise((resolve, reject) => {
+	reject("This Promise will be rejected with this error string.");
+}).catch((errorString) => {
+	console.log(errorString);
+});
+// in the Terminal: This Promise will be rejected with this error string.
