@@ -46,3 +46,16 @@ class Candy {
 // console.log(candy1.price); // 3.50
 
 module.exports = Candy;
+
+// // In node REPL:
+
+// 		> const candy = require('./candy.js');
+// 		 undefined
+// 		> const candy1 = new candy ('Mars', 4.99);
+// 		 undefined
+// 		> candy1
+// 		 Candy { candyName: 'Mars', price: 4.99 }
+// 		> candy1.getName()
+// 		 'Mars'
+// 		> candy1.getPrice();
+// 		 4.99
