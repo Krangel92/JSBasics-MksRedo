@@ -4,14 +4,13 @@ class ShoppingBasket {
 	}
 
 	addItem(candy) {
-		this.basket.push(candy.price);
+		this.basket.push(candy);  // add the whole candy object to the basket, i.e., name & price
 	}
 
 	getTotalPrice() {
 		let total = 0;
 		for (let i = 0; i < this.basket.length; i++) {
-			total += this.basket[i];
-		}
+			total += this.basket[i].getPrice(); // Use getPrice() from Candy class to just work with the price 
 		return total;
 	}
 }
